@@ -57,11 +57,44 @@
                             </div>
                         @else
                             <div class="card-body d-flex justify-content-between mx-auto">
-                                <a href="{{ route('articulos.category', $producto) }}" class="card-link">
-                                    <button class="btn btn-lg umbroboton btn-block" type="submit" onclick="comprar()">
+                                <!--<a href="{`{ route('articulos.category', $producto) }}" class="card-link">-->
+                                    <!--<button class="btn btn-lg umbroboton btn-block" type="submit" onclick="comprar()">
                                         Comprar
-                                    </button>
-                                </a>
+                                    </button>-->
+                                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-lg umbroboton btn-block" data-toggle="modal" data-target="#exampleModalCenter">
+  Comprar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{$category->nombre}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+                Estimado cliente, agradecemos su interes en nuestros productos! 
+                Lamentablemente, no tenemos en inventario el producto seleccionado.
+                Pero no te preocupes! Seras el primero en recibir una notificacion
+                avisandote que ya existe e nuestro inventario para que puedas adquirirlo. <br>
+                <i>Muchas gracias por preferir a Umbro Inc.</i>
+            </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <a href="{{ route('umbroshop.contactanos.index') }}" class="card-link">
+        <button type="button" class="btn btn-primary">Envianos un recordatorio</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+                                <!--</a>-->
                             </div>
                         @endauth
                     </div>

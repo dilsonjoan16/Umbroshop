@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
-use app\Mail\ContactanosMailable;
+use App\Mail\ContactanosMailable;
 use NunoMaduro\Collision\Provider;
 
 
 
 class ContactanosController extends Controller
 {
-    /*public function nosotros(){
+    /*
+    public function nosotros(){
         return view('layouts.nosotros');
     }*/
     public function index(){

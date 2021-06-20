@@ -17,7 +17,7 @@ class Controller extends BaseController
 
     public function __construct()
     {
-        $this->middleware('auth')->except('index');
+        $this->middleware('auth')->only('index');
     }
     
     public function __invoke(){
@@ -37,7 +37,7 @@ class Controller extends BaseController
         $category = Categoria::create([
             'nombre' => $category->nombre
         ]);
-        return view('categoria.create', compact('category'))->with('info4','La categoria fue creada con exito!');
+        return view('categorias.create', compact('category'))->with('info4','La categoria fue creada con exito!');
 
     }
 

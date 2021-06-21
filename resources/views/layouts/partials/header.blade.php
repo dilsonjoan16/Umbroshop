@@ -36,9 +36,9 @@
                 <li class="nav-item">
                     <a href="{{route('umbroshop.create')}}" class="nav-link {{request()->routeIs('umbroshop.create') ? 'active' : ''}}">Crear Producto</a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{route('category.create')}}" class="nav-link {{request()->routeIs('category.create') ? 'active' : ''}}">Crear Categoria</a>
-                </li>
+                <!--<li class="nav-item">
+                    <a href="{`{route('category.create')}}" class="nav-link {`{request()->routeIs('category.create') ? 'active' : ''}}">Crear Categoria</a>
+                </li>-->
             @endauth
                 <li class="nav-item">
                     <a href="{{route('umbroshop.contactanos.index')}}" class="nav-link {{request()->routeIs('umbroshop.contactanos.index') ? 'active' : ''}}">Contactanos</a>

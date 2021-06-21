@@ -30,7 +30,7 @@ class Controller extends BaseController
     }*/
 
     public function guardar(Request $request, Categoria $category){
-        $request()->validate([
+        $request->validate([
             'nombre' => 'required|unique'
         ]);
 

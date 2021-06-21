@@ -40,7 +40,7 @@
                             <div class="col-md-6 offset-md-4 py-3">
                                 <button type="submit" class="btn btn-block btn-lg umbroboton text-white">
                                     {{ __('Cancelar creacion')}}
-                                    <a href="{{route('umbroshop.home')}}"></a>
+                                    <a href="{{route('umbroshop.show')}}"></a>
                                 </button>
                             </div>
                         </div>

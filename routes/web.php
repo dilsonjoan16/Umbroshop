@@ -39,7 +39,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::view('compra','/compra')->name('umbroshop.compra');
 
-Route::post('umbroshop/category/create', [Controller::class, 'guardar'])->name('category.create');
+Route::get('umbroshop/category/create', [Controller::class, 'guardar'])->name('category.create');
 
 Route::get('category/{category}', [ArticulosController::class, 'category'])->name('articulos.category');
 
